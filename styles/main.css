@@ -14,7 +14,8 @@ p {
 }
 
 .body-content {
-  margin-top: 15vh;
+  max-height: 85vh;
+  margin-top: 20vh;
 }
 
 .topnav {
@@ -61,4 +62,21 @@ p {
 
 .align-center {
   text-align: center;
+}
+
+#profile-body {  
+  display: table;
+  width: 100vw;
+}
+
+#profile-text {
+  display: table-cell;  
+  width: 50vw;
+  color: greenyellow;
+}
+
+#profile-pic {  
+  display: table-cell;
+  width: 50vw;
+  color: greenyellow;
 }
