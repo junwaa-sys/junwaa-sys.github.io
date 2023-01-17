@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: black;
+  color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,8 +18,7 @@ p {
   color: white;
 }
 
-.body-content {
-  max-height: 85vh;
+.body-content {  
   margin-top: 20vh;
 }
 
@@ -42,6 +46,20 @@ p {
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .white-text {
