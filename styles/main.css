@@ -9,6 +9,14 @@ footer {
   margin-top: auto;
 }
 
+p {
+  color: white;
+}
+
+.body-content {
+  margin-top: 15vh;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #333;
