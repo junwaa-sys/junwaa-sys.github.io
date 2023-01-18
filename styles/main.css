@@ -7,7 +7,7 @@ body {
   color: white;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
 }
 
 footer {
@@ -18,8 +18,8 @@ p {
   color: white;
 }
 
-.body-content {  
-  margin-top: 20vh;
+.body-content {    
+  margin: 20vh;
 }
 
 .topnav {
@@ -80,6 +80,7 @@ p {
 
 .align-center {
   text-align: center;
+  align-items: center;
 }
 
 img {
@@ -94,13 +95,15 @@ img {
   body {
     font-size: 12px;
   }
-  img {
+
+  img {    
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 5px;
     width: 80px;
     height: auto;
   }
+
   .topnav a {
     float: left;
     color: #f2f2f2;
@@ -109,6 +112,7 @@ img {
     text-decoration: none;
     font-size: 10px;    
   }
+
   .column {
     float: left;
     width: 50%;
@@ -185,5 +189,67 @@ img {
     float: left;
     width: 50%;
     padding: 5px;  
+  }
+
+  #profile-pic {
+    margin-top: 5vh;
+  }
+
+  #no-margin-example {
+    border: 0px solid #ddd;
+    border-radius: 0px;
+    padding: 0px;
+    width: 200px;
+    height: auto;
+  }
+
+  #margin-example {
+    border: 0px solid #ddd;
+    border-radius: 0px;
+    padding: 0px;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  #no-padding-example {
+    border: 1px solid #ddd;
+    border-radius: 0px;
+    padding: 0px;
+    width: 200px;
+    height: auto;
+  }
+
+  #padding-example {    
+    border-color: white;
+    border-style: solid;
+    border-radius: 0px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    width: 200px;
+    height: auto;    
+  }
+  
+  #no-border-example {    
+    border-width: 0px;
+    border-radius: 0px;
+    border-color: white;
+    border-style: solid;
+    padding: 0px;
+    width: 200px;
+    height: auto;
+  }
+
+  #border-example {
+    border-width: 10px;
+    border-radius: 25%;
+    border-color: white;
+    border-style: dotted;
+    padding: 0px;
+    width: 200px;
+    height: auto;    
   }
 }
