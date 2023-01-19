@@ -3,8 +3,8 @@
 }
 
 body {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;  
@@ -15,10 +15,12 @@ footer {
 }
 
 p {
-  color: white;
+  font-family: arial;
+  color: black;
 }
 
-.body-content {    
+.body-content { 
+  font-family: arial;   
   margin: 20vh;
 }
 
@@ -27,6 +29,7 @@ p {
   background-color: #333;
   position: fixed;  
   width: 100vw;
+  font-family: arial;
 }
 
 .topnav a {
@@ -34,11 +37,10 @@ p {
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  text-decoration: none;  
 }
 
-.topnav a:hover {
+.topnav a:hover, .dropdown:hover .dropbtn {
   background-color: #ddd;
   color: black;
 }
@@ -46,6 +48,52 @@ p {
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-size: inherit;
+}
+
+.dropdown .active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;  
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /* Create two equal columns that floats next to each other */
