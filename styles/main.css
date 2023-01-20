@@ -3,6 +3,7 @@
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: white;
   color: black;
   min-height: 100vh;
@@ -287,7 +288,7 @@ img {
 }
 
 #padding-example {    
-  border-color: white;
+  border-color: black;
   border-style: solid;
   border-radius: 0px;
   padding-top: 20px;
@@ -301,7 +302,7 @@ img {
 #no-border-example {    
   border-width: 0px;
   border-radius: 0px;
-  border-color: white;
+  border-color: black;
   border-style: solid;
   padding: 0px;
   
@@ -311,7 +312,7 @@ img {
 #border-example {
   border-width: 10px;
   border-radius: 25%;
-  border-color: white;
+  border-color: black;
   border-style: dotted;
   padding: 0px;
   
