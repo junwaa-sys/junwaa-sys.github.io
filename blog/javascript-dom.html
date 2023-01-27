@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link href="../styles/main.css" rel="stylesheet" type="text/css"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> 
+    
+    <title>Stories and Legends</title>
+  </head>  
+  <body>
+    <div class="topnav white-text">
+      <h1 class="align-center">Joon's Blog - Javascript-Dom</h1> 
+      <hr>   
+      <a href="/main.html">Home</a>
+      <a href="/blog/personal-profile.html">Personal Profile</a>
+      <div class="dropdown">
+        <button class="dropbtn active">Blog posts 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="/blog/te-houtaewa-template.html">te-houtaewa</a>  
+          <a href="/blog/html-css.html">Html-CSS</a>          
+          <a href="/blog/learning-plan.html">learning-plan</a>          
+          <a href="/blog/identity-values.html">Identity-values</a>  
+          <a href="/blog/emotional-intelligence.html">Emotional-Intelligence</a>  
+          <a class="active" href="/blog/javascript-dom.html">Javascript-Dom</a>  
+        </div>
+      </div> 
+    </div>
+    <div class="body-content">
+      <h2>JavaScript, HTML and CSS</h2>
+      <p>JavaScript, HTML and CSS would be descripted using vehicle. HTML is a structure of a vehicle (eg. tyre, chasis and doors etc) CSS would be design on it.(eg external shape and colour ect) finally JavaScript is all mechanism that make the well-shaped steel thing to drive(eg drivetrain, oils, fuids and joints etc).</p>
+      <h2>Control Flow and Loops</h2>
+      <p>Control flow is a flow in which a computer executes lines of code in a script. This flow starts from the first line on the top and runs through to the last line on the bottom of a script. However there could be indicators that control the flow in other directions. (e.g loop, conditional statement.).</p>
+      <p>The control flow can be explained by looking at the reading sentences. While control flow starts from the first line to the last top to bottom, we are reading sentences form left to right for a sentence and top to bottom for paragraphs. However, if I told you to find a typo in previous sentences  and do not read further until a typo is found, you will need to go back to the previous sentence and read through them again until you find one.</p>
+      <p>Reading in order is control flow and reading through from start repeatedly until a condition is met (in this case finding a typo) is a loop.</p>
+      <h2>What is DOM</h2>
+      <P>DOM is a label to things on web page contents. We can manipulate the contents of things on the web page with certain labels or change styles (colour, font size, etc). For example, we may have a sentence as below;</P>
+
+      <p id="sentence" onclick="myFunction()">This is a sentence, click me and see what happens</p>
+      
+      <h2>Difference accessing data between arrays and objects</h2>
+      <p>Objects consist of a key and its property, meaning things and its property for example ‘car’ object and contains model, brand, year etc. Arrays consist of a series of values that do not need to be related to each other.</p>
+      <h3>Objects</h3>
+      <p>Data from object can be access with identifying key and property name</p>
+      <p>Examples:</p>
+      <div class="row">
+        <div class="column">
+          <img src="/images/obj-example.JPG">
+        </div>
+        <div class="column">
+          <p>carObj is object which has several objects inside of it. Model3, tiguan, 991 is a object, and make, price and fuel are the properties</p>
+          <p>data can be accessed using Dot Method. (eg. 'carsOdj.model3.make  will return Tesla')</p>
+          carsObj.<input type="text" id="object1" placeholder="enter object name" onkeyup="getDataObj()">.<input type="text" id="property" placeholder="enter property name" onkeyup="getDataObj()"> 
+          <p>Result: <span id="data-obj"></span></p>
+        </div>
+      </div>
+      <h3>Arrays</h3>
+      <p>data in arrays can be accessed by identifying index number</p>
+      <p>Examples:</p>
+      <div class="row">
+        <div class="column">
+          <img src="/images/arr-example.JPG">
+        </div>
+        <div class="column">
+          <p>carsArr is a array that has values of "model3", "tiguan" and "911" these are just list of things and can be assessed by giving index number starting from 0 (eg.carsArr[0] will return model3)</p>
+          <span>carsArr[</span><input type="number" min=0 max=2 id="arrIndex" placeholder="enter index number" onchange="getDataArr()"><span>]</span>
+          <p>Result: <span id="data-arr"></span></p>
+        </div>
+      </div>
+
+      <h2>Functions</h2>
+      <p>Functions are sets of codes that do a certain job when it is called on generating output. It is useful to use when there is a certain task required on multiple events, saving codes and making the script more readable. </p>
+
+    </div>
+    <!-- this is a comment. -->  
+    <script src="/scripts/main.js"></script>
+  </body>
+  <footer>
+    <hr>
+    <p class="white-text align-left">Joon's Blog.</p>
+    <p class="white-text align-left">contact: juny.jeong@gmail.com</p>
+  </footer>
+</html>
