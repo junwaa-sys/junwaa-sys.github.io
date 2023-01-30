@@ -38,3 +38,15 @@ function getDataArr() {
   let arrData = carsArr[indexNumber]
   document.getElementById('data-arr').innerHTML = arrData
 }
+
+function loadContent(htmlName) {
+  strInnerHTML =
+    '"<object type ="text/html" data="/blog/' + htmlName + '.html"' + '>'
+  console.log(strInnerHTML)
+  document.getElementById('mainContent').innerHTML = strInnerHTML
+}
+
+async function load_home(htmlName) {
+  content = document.getElementById('mainContent')
+  content.innerHTML = await (await fetch('/blog/' + htmlName + '.html')).text()
+}
