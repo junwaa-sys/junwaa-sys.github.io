@@ -32,21 +32,23 @@ function getDataObj() {
   let objData = carsOdj[obj][property]
   document.getElementById('data-obj').innerHTML = objData
 }
-
 function getDataArr() {
   let indexNumber = document.getElementById('arrIndex').value
   let arrData = carsArr[indexNumber]
   document.getElementById('data-arr').innerHTML = arrData
 }
-
-function loadContent(htmlName) {
-  strInnerHTML =
-    '"<object type ="text/html" data="/blog/' + htmlName + '.html"' + '>'
-  console.log(strInnerHTML)
-  document.getElementById('mainContent').innerHTML = strInnerHTML
+// get a example code from https://www.tutorialspoint.com/How-to-load-external-HTML-into-a-div-using-jQuery
+function loadContent(pageName) {
+  $('#mainContent').load(`/pages/${pageName}.html`)
+  changeHeading(pageName)
 }
-
-async function load_home(htmlName) {
-  content = document.getElementById('mainContent')
-  content.innerHTML = await (await fetch('/blog/' + htmlName + '.html')).text()
+function activeTopNav(activePage) {
+  inactiveTopNav()
+  $(activePage).addClass('active')
+}
+function inactiveTopNav() {
+  $('a').removeClass('active')
+}
+function changeHeading(heading) {
+  document.getElementById('pageHeading').innerHTML = `Joon's Blog - ${heading}`
 }
