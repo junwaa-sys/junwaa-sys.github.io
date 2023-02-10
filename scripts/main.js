@@ -1,3 +1,9 @@
+window.onload = loadNav
+// let currentPage
+function loadNav() {
+  $('#topnav').load('../topnav.html')
+}
+
 function myFunction() {
   let sentence = document.getElementById('sentence')
   sentence.innerHTML = 'This has been Changed, notice what is changed?!!'
@@ -54,6 +60,12 @@ function activeTopNav(activePage) {
 function inactiveTopNav() {
   $('a').removeClass('active')
 }
-function changeHeading(heading) {
-  document.getElementById('pageHeading').innerHTML = `Joon's Blog - ${heading}`
-}
+// function changeHeading(heading) {
+//   document.getElementById('pageHeading').innerHTML = `Joon's Blog - ${heading}`
+// }
+
+// function getCurrentPage() {
+//   currentPage = window.location.href
+//   let lastIndex = currentPage.lastIndexOf('/')
+//   currentPage = currentPage.substring(lastIndex + 1, currentPage.length - 5)
+// }
