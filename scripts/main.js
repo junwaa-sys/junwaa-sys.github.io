@@ -39,8 +39,13 @@ function getDataArr() {
 }
 // get a example code from https://www.tutorialspoint.com/How-to-load-external-HTML-into-a-div-using-jQuery
 function loadContent(pageName) {
-  $('#mainContent').load(`/pages/${pageName}.html`)
+  $('#mainContent').load(`/blogs/${pageName}.html`)
   changeHeading(pageName)
+  window.history.pushState(
+    'object or string',
+    'Title',
+    `/blogs/${pageName}.html`
+  )
 }
 function activeTopNav(activePage) {
   inactiveTopNav()
